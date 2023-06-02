@@ -1,0 +1,559 @@
+﻿<%@ Master Language="VB" CodeFile="Masterpage.master.vb" Inherits="Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <%--Meta file of navbar start--%>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+
+
+    <title>Planet Fashion</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        
+body{
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 100%;
+}
+ #success_tic .page-body{
+  max-width:300px;
+  background-color:#FFFFFF;
+  margin:10% auto;
+}
+ #success_tic .page-body .head{
+  text-align:center;
+}
+/* #success_tic .tic{
+  font-size:186px;
+} */
+#success_tic .close{
+      opacity: 1;
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    padding: 3px 15px;
+  margin-bottom: 10px;
+}
+#success_tic .checkmark-circle {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.checkmark-circle .background {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #1ab394;
+  position: absolute;
+}
+#success_tic .checkmark-circle .checkmark {
+  border-radius: 5px;
+}
+#success_tic .checkmark-circle .checkmark.draw:after {
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  animation-delay: 300ms;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-name: checkmark;
+  -moz-animation-name: checkmark;
+  animation-name: checkmark;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -o-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#success_tic .checkmark-circle .checkmark:after {
+  opacity: 1;
+  height: 75px;
+  width: 37.5px;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 15px solid #fff;
+  border-top: 15px solid #fff;
+  border-radius: 2.5px !important;
+  content: '';
+  left: 35px;
+  top: 80px;
+  position: absolute;
+}
+
+@-webkit-keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 37.5px;
+    opacity: 1;
+  }
+  40% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+  100% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 37.5px;
+    opacity: 1;
+  }
+  40% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+  100% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 37.5px;
+    opacity: 1;
+  }
+  40% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+  100% {
+    height: 75px;
+    width: 37.5px;
+    opacity: 1;
+  }
+}
+
+
+    </style>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+    <%--CSS of navbar--%>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+    <%--End of CSS of navbar--%>
+    <%--Javascript for navbar start--%>
+      <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+    <%--Javascript for navbar end--%>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">       
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch">
+                <img src="img/icon/search.png" alt=""></a>
+            <a href="#">
+                <img src="img/icon/heart.png" alt=""></a>
+            <a href="Shopping_Cart.aspx">
+                <img src="img/icon/cart.png" alt="">
+                <span id="cart_item">0</span></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top" id="s2" runat="server">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Free shipping, 30-day return or refund guarantee.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="Sign_In.aspx">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>Usd <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>USD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   <%--     <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./default.aspx" style="text-decoration: none; color: black">
+                            
+                            <img src="\img\dist\download.png" alt="" style="width: 30px;">
+                            Planet Fashion Point  </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./Default.aspx">Home</a></li>
+                            <li><a href="./Shop.aspx">Shop</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="Contact_Us.aspx">Contacts</a></li>
+                            <li><a href="Sign_In.aspx">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <nav class="header__menu mobile-menu" style="display: inline-block">
+                            <a href="#" class="search-switch">
+                                <img src="img/icon/search.png" alt=""></a>
+                            <a href="#">
+                                <img src="img/icon/heart.png" alt=""></a>
+                            <a href="Shopping_Cart.aspx">
+                                <img src="img/icon/cart.png" alt="">
+                                <span>0</span></a>
+                            <ul style="display: inline-flex">
+                                <li>
+                                 <a href="#">Profile</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about_us.aspx">My Profile</a></li>
+                                        <li><a href="./shop-details.html">Orders</a></li>
+                                        <li><a href="./shopping-cart.html">Wishlist</a></li>
+                                        <li><a href="./blog-details.html">Log-Out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>--%>
+    <%--</header>--%>
+    <!-- Header Section End -->
+
+    
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">
+                        <strong><span>Planet</span> Fashion</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="#" class="bi-person custom-icon me-3"></a>
+
+                        <a href="Shopping_Cart.aspx" class="bi-bag custom-icon"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" id="Home"  onclick="change_active(this);" href="default.aspx">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"  id="Shop" onclick="change_active(this);" href="shop.aspx">Shop</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="Blog"  onclick="change_active(this);" href="blog.aspx">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="Contact"  onclick="change_active(this);" href="Contact_Us.aspx">Contact</a>
+                            </li>
+
+                            <li class="nav-item" id="login_btn">
+                                <a class="nav-link" id="Login"  onclick="change_active(this);" href="sign_in.aspx">Login</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block header__menu mobile-menu p-0 mt-3" style="font-size:large">                           
+                            <ul style="display:inline-flex">
+                            <li>
+                            <a href="Shopping_Cart.aspx" class="bi-bag custom-icon "></a>
+                            </li>
+                                <li>
+                            <a href="#" class="bi-person custom-icon me-3 "></a>
+                            <ul class="dropdown">
+                                        <li><a href="profile.aspx">My Profile</a></li>
+                                        <li><a href="Order_list.aspx">Orders</a></li>
+                                        <li><a href="Wishlist.aspx">Wishlist</a></li>
+                                        <li><a href="Sign_In.aspx">Log-Out</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+
+                    nav_item = sessionStorage.getItem("nav");
+                    document.getElementById(nav_item).classList.add("active")
+                    function change_active(obj) {
+                        sessionStorage.setItem("nav", obj.innerText);
+                    }
+
+
+                </script>
+            </nav>
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <%--<img src="img/footer-logo.png" alt="">--%>
+                                <h2 style="color: white">Planet Nx</h2>
+                            </a>
+                        </div>
+                        <p>The customer is at the heart of our unique business model, which includes design.</p>
+                        <a href="#">
+                            <img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="#">Clothing Store</a></li>
+                            <li><a href="#">Trending Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="Contact_Us.aspx">Contact Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                            <li><a href="Admin/Admin_Login.aspx">Login To Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>
+                            Copyright ©
+                           
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved Planet Fashion Point
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+    
+    <!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+    <div class="head">  
+      <h3 style="margin-top:5px;">Product Successfully Added To Cart</h3>
+      <%--<h4>Lorem ipsum dolor sit amet</h4>--%>
+    </div>
+
+  <h1 style="text-align:center;"><div class="checkmark-circle">
+  <div class="background"></div>
+  <div class="checkmark draw"></div>
+</div><h1>
+
+  </div>
+</div>
+    </div>
+
+  </div>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>    
+        function logout() {
+           <%-- '<%=Session("flag") = 0%>';
+            alert('<%=Session("flag") = 0%>')--%>
+            window.location.href = "Sign_In.aspx";
+        }
+  
+        document.getElementById("ppimg").src = "/img/profiles/" + '<%=Session("proimg")%>';
+
+        if ('<%=Session("uname")%>' <> "") {
+            document.getElementById("login_btn").style.display = "none";
+        }
+
+
+     //function imgload() {
+        //}
+        function remove_login() {
+            document.getElementById('loginlink').hidden = true
+            alert("llll");
+        }
+    </script>
+</body>
+</html>
